@@ -1,0 +1,20 @@
+@mixin text-effect($val){
+    @if $val == danger {
+      color: red;
+    }
+    @else if $val == alert {
+      color: yellow;
+    }
+    @else if $val == success {
+      color: green;
+    }
+    @else {
+      color: black;
+    }
+  }
+  @mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform:$property;
+    transform: $property;
+  }
+  

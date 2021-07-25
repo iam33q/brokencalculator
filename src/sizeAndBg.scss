@@ -1,0 +1,19 @@
+.App-header {
+    width: 90px;
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    // @include transform(0deg);
+    @include text-effect(alert);
+    @include transform(30deg);
+  }
+  $colours: white,silver,darkgray,gray,black;
+  @for $i from 1 through 4 {
+    #counter#{$i} { background-color: nth($colours, $i)}
+  }
+.calculatordisplay {
+  height: 30px;
+  width: 90px;
+  background-color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
